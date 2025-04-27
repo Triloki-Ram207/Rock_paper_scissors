@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainScreen">
+
+
+<!-- This frame exist in all frames -->
+
+         <div class="scoreCardContainer">
+            <div class="gameNameContainer">
+            <p class="gameNames" id="rockText">ROCK</p>
+            <p class="gameNames" id="paperText">PAPER</p>
+            <p class="gameNames" id="scissorsText">SCISSORS</p>
+            </div>
+
+            <div class="scoreCounterContainer">
+                <div class="computerScoreContainer">
+                    <p>COMPUTER</p>
+                    <p>SCORE</p>
+                    <p class="scoreBox" id="computerScore"> 0</p>
+                  </div>
+      
+                  <div class="yourScoreContainer">
+                   <p>YOUR</p>
+                   <p>SCORE</p>
+                   <p class="scoreBox" id="userScore"></p>
+                  </div>
+            </div>
+          </div>
+          <div class="rules">
+            <h1>Game Rules</h1>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper and papar beats rock.</li>
+                <li>Agree ahead of time whether you will count off "rock, paper, scissors, shoot" of just "rock, paper, scissors."</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+          </div>
+          <button class="ruleBtn">RULES</button>
+          <div class="close">
+            <p>X</p>
+          </div>
+
+<!-- opening frame -->
+            
+            <div class="iconAndRulesContainer">
+                <div class="stoneScissorIcons">
+                    <div class="icon" id="stoneIcon">
+                        <img src="./stone.png" alt="">
+                        
+                    </div>
+                    <div class="border1">
+    
+                    </div>
+                    <div class="icon" id="scissorsIcon">
+                        <img src="./scissors.png" alt="">
+    
+                    </div>
+                </div>
+                <div class="border">
+                  <div class="border2">
+    
+                  </div>
+                  <div class="border3">
+    
+                  </div>
+                </div>
+                <div >
+                    <div class="icon" id="paperIcon">
+                       <img src="./paper.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+<!--FIRST FRAME  -->
+          <div class="userScissorsClass" id="youPickedScissors">
+            <div class="outer2">
+                <div class="outer1">
+                    <div class="icon hov" id="scissorsIcon">
+                        <img src="./scissors.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <p>YOU PICKED</p>
+          </div>
+
+          <div class="winResult" id="youWinText">
+            <h1>YOU WIN</h1>
+            <h3>AGAINST PC</h3>
+            <div class="playagainBtn">PLAY AGAIN</div>
+         </div>
+
+         <div class="pcPaperClass" id="pcPickedPaper">
+             <p>PC PICKED</p>
+             <div class="icon" id="paperIcon">
+                 <img src="./paper.png" alt="">
+              </div>
+         </div>
+         <button class="rulesBtn">RULES</button>
+         <button class="nextBtn">NEXT</button> 
+
+<!-- SECOND FRAME -->
+ 
+         <div class="pcScissorsClass" id="pcPickedScissors">
+            <div class="outer2">
+                <div class="outer1">
+                    <div class="icon hov" id="scissorsIcon">
+                        <img src="./scissors.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <p>PC PICKED</p>
+          </div>
+
+          <div class="lostResult" id="youLostText">
+            <h1>YOU LOST</h1>
+            <h3>AGAINST PC</h3>
+            <div class="playagainBtn">PLAY AGAIN</div>
+         </div>
+
+         <div class="userPaperClass" id="youPickedPaper">
+             <p>YOU PICKED</p>
+             <div class="icon" id="paperIcon">
+                 <img src="./paper.png" alt="">
+              </div>
+         </div> 
+
+<!-- third frame -->
+
+         <div class="drawResult" id="tieUpText">
+            <h2>TIE UP</h2>
+            <div class="playagainBtn">REPLAY</div>
+         </div>
+
+         <div class="userStoneClass" id="youPickedStone">
+             <p>YOU PICKED</p>
+             <div class="icon" id="stoneIcon">
+                 <img src="./stone.png" alt="">
+              </div>
+         </div> 
+
+         <div class="pcStoneClass" id="pcPickedStone">
+            <p>PC PICKED</p>
+            <div class="icon" id="stoneIcon">
+                <img src="./stone.png" alt="">
+             </div>
+        </div> 
+    
+            
+            <img  class="stars" src="./Group 5.png" alt="">
+            <img class="trophy" src="./Vector.png" alt="">
+            <div class="victoryText">
+                <h1>HURRAY!!</h1>
+                <h3>YOU WON THE GAME</h3>
+            </div>
+            <div class="playagainBtn playbtn" >PLAY AGAIN</div> 
+
+        
+    </div> 
+
+    <script src="./script.js"></script>
+</body>
+</html>

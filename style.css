@@ -1,0 +1,620 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.mainScreen{
+    width:100vw;
+    height:100vh;
+    background-color:#8CC461;
+    position:relative;
+}
+
+.scoreCardContainer{
+    width:800px;
+    height:138px;
+    top:62px;
+    left:240px;
+    border-radius: 13px;
+    border:2px solid white;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    left:20%;
+    top:0;
+    /* border:2px solid rgb(0, 255, 76); */
+}
+
+.gameNameContainer{
+    padding: 10px;
+}
+
+#rockText{
+    width:135px;
+    height:37px;
+    top:78px;
+    left:258px;
+    /* border:2px solid rgb(66, 182, 211); */
+}
+
+#paperText{
+    width:150px;
+    height:37px;
+    top:120px;
+    left: 258px;
+    /* border:2px solid rgb(66, 182, 211); */
+}
+
+#scissorsText{
+    width: 235px;
+    height: 37px;
+    top:163;
+    left: 259px;
+    /* border:2px solid rgb(66, 182, 211); */
+
+}
+
+.gameNames{
+    font-family:Roboto;
+    font-weight:600;
+    font-size:40px;
+    line-height: 100%;
+    letter-spacing: 10%;
+    color:white;
+    /* border:2px solid rgb(218, 255, 6); */
+
+}
+
+.scoreCounterContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border:2px solid rgb(255, 0, 221); */
+    width:40%;
+    justify-content: space-around;
+}
+
+.computerScoreContainer, .yourScoreContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border:2px solid rgb(8, 8, 82); */
+    padding: 1rem;
+    width:44%;
+    height:90%;
+    border-radius: 10px;;
+    background-color: white;
+    font-weight: 400;
+
+    
+}
+
+.scoreBox{
+     font-size: 2rem;
+     font-family: Roboto;
+     font-weight: 700;
+     font-size: 64px;
+     line-height: 100%;
+     letter-spacing: 0%;
+    /* border:2px solid rgb(97, 66, 211); */
+
+}
+
+.iconAndRulesContainer{
+    /* border:2px solid red; */
+    width:450px;
+    height:400px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:28%;
+    left:30%;
+}
+
+.stoneScissorIcons{
+    /* border:2px solid white; */
+    width:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative
+}
+
+.icon{
+    border:16px solid rgb(11, 12, 12);
+    width:110px;
+    height:110px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stoneIcon{
+    background-color: white;
+    border-color: blue;
+}
+
+#stoneIcon img{
+   width: 80px;
+   height: 58px;
+}
+
+#scissorsIcon{
+    background-color: white;
+    border-color: purple;
+}
+
+#scissorsIcon img{
+    width: 37px;
+    height: 53px;  
+}
+
+#paperIcon{
+    background-color: white;
+    border-color: orange;
+}
+
+#paperIcon img{
+    width: 72px;
+    height: 72px;
+ 
+}
+
+.border1{
+    border: 13px solid black;
+    width: 133px;
+    height:0px;
+}
+
+.border{
+    width:400px;
+    height:66px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.border2{
+    width:108px;
+    height:0px;
+    border: 13px solid black;
+    transform:rotate(-122deg);
+
+}
+
+.border3{
+    width:108px;
+    height:0px;
+    transform:rotate(-57deg);
+    border: 13px solid black;
+}
+
+.rules{
+    width: 300px;
+    height: 325px;
+    border:7px solid white;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #004429;
+    position: absolute;
+    right:6%;
+    bottom: 10%;
+    /* border: 2px solid black; */
+    color:white;
+    z-index: 1;
+}
+
+.rules ul{
+    list-style-type: square;
+    list-style:linear-gradient(yellow);
+    /* border:2px solid red; */
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:17px;
+}
+
+.ruleBtn{
+    position:absolute;
+    bottom:3%;
+    right:4%;
+    width:105px;
+    border-radius: 8px;
+    border: 2px solid white;
+    height: 40;
+    padding:5px 10px;
+    color:white;
+    background-color: #8CC461;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.close{
+    width:50px;
+    height:50px;
+    border:5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    position: absolute;
+    right:5%;
+    top:35%;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.close p{
+    color:white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    font-family: Dangrek;
+
+}
+
+.outer1{
+    width: 250px;
+    height:250px;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3B6720;
+    ;
+
+}
+
+.outer2{
+    width: 300px;
+    height:300px;
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#1DA82BC9;
+
+
+}
+
+.userScissorsClass{
+    width: 350px;
+    height:350px;
+    /* border:2px solid rgb(123, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #2E9A2563;
+    margin-right:4rem ;
+    position:absolute;
+    z-index: -1;
+
+}
+
+.pcScissorsClass{
+    width: 350px;
+    height:350px;
+    /* border:2px solid rgb(123, 255, 0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #2E9A2563;
+    margin-right:4rem ;
+    position:absolute;
+    z-index: -1;
+
+}
+
+.userScissorsClass p{
+    position:absolute;
+    top:9.9%;
+    color:white;
+}
+.userScissorsClass:hover{
+    border:2px solid blue;
+}
+
+.pcScissorsClass p{
+    position:absolute;
+    top:9.9%;
+    color:white;
+}
+.pcScissorsClass:hover{
+    border:2px solid blue;
+}
+
+.hov:hover .outer{
+    border:none;
+    
+}
+.hov{
+    position:absolute;
+    width: 140px;
+    height: 140px;
+}
+
+.drawResult{
+    /* border:2px solid rgb(129, 27, 27); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:160px;
+    height: 124px;
+    margin-right: 40px;
+    color:white;
+    font-family: Roboto;
+    position:absolute;
+    z-index: -1;
+}
+
+.drawResult h3{
+    margin-left: 10px;
+}
+
+.lostResult{
+    /* border:2px solid rgb(129, 27, 27); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:160px;
+    height: 124px;
+    margin-right: 40px;
+    color:white;
+    font-family: Roboto;
+    position:absolute;
+    z-index: -1;
+}
+
+.lostResult h3{
+    margin-left: 10px;
+}
+
+.winResult{
+    /* border:2px solid rgb(129, 27, 27); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:160px;
+    height: 124px;
+    margin-right: 40px;
+    color:white;
+    font-family: Roboto;
+    position:absolute;
+    z-index: -1;
+}
+
+.winResult h3{
+    margin-left: 10px;
+}
+
+.playagainBtn{
+    background-color: white;
+    color:grey;
+    padding:10px;
+    text-align: center;
+    border-radius: 10px;
+    width:80%;
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+.pcStoneClass{
+    /* border:5px solid rgb(179, 240, 12); */
+    height:200px;
+    width:200px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 600;
+    position:absolute;
+    z-index: -1;
+}
+
+.userStoneClass{
+    /* border:5px solid rgb(179, 240, 12); */
+    height:200px;
+    width:200px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 600;
+    position:absolute;
+    z-index: -1;
+}
+
+.stoneClass div{
+    width: 140px;
+    height: 140px;
+}
+
+.userPaperClass{
+    /* border:10px solid rgb(73, 12, 240); */
+    height:200px;
+    width:200px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 600;
+    position:absolute;
+    z-index: -1;
+}
+
+.pcPaperClass{
+    /* border:10px solid rgb(73, 12, 240); */
+    height:200px;
+    width:200px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    font-size: 17px;
+    font-family: Roboto;
+    font-weight: 600;
+    position:absolute;
+    z-index: -1;
+}
+
+.nextBtn{
+    position:absolute;
+    bottom:3%;
+    right:3%;
+    width:105px;
+    border-radius: 8px;
+    border: 2px solid white;
+    height: 40;
+    padding:5px 10px;
+    color:white;
+    background-color: #8CC461;
+    cursor: pointer;
+    z-index: -1;
+  
+}
+
+.rulesBtn{
+    position:absolute;
+    bottom:3%;
+    right:14%;
+    width:105px;
+    border-radius: 8px;
+    border: 2px solid white;
+    height: 40;
+    padding:5px 10px;
+    color:white;
+    background-color: #8CC461;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.appear{
+    z-index: 1;
+}
+
+.disappear{
+    z-index: -1;
+}
+
+#youWinText{
+    left:43.2%;
+    top:58%;
+}
+
+#youLostText{
+    left:47%;
+    top:58%;
+    /* z-index: 1; */
+}
+
+#tieUpText{
+    left:47%;
+    top:58%;
+    /* z-index: 1; */
+}
+
+#youPickedScissors{
+    left:17.5%;
+    top:36.6%;
+}
+
+#pcPickedScissors{
+    left:56.5%;
+    top:34%;
+}
+
+#youPickedPaper{
+    left:23%;
+    top:44%;
+}
+
+#pcPickedPaper{
+    left:62%;
+    top:41%;
+}
+
+#youPickedStone{
+    left:23%;
+    top:44%;
+}
+
+#pcPickedStone{
+    left:60.9%;
+    top:41%;
+    padding-left: 2rem;
+}
+
+#result3 h2{
+    margin-left: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.stars{
+    position:absolute;
+    top:8%;
+    left:30%;
+    z-index: -1;
+}
+
+.trophy{
+    position: absolute;
+    top:20%;
+    left:41%;
+    z-index: -1;
+}
+
+.victoryText{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:30%;
+    height:20%;
+    /* border:2px solid black; */
+    top:55%;
+    left:34%;
+    font-size: 2rem;
+    color: white;
+    z-index: -1;
+
+}
+
+.playbtn{
+    position: absolute;
+    width:10rem;
+    height:2.7rem;
+    top:83%;
+    left:43%;
+    text-align: center;
+    z-index: -1;
+}
+
